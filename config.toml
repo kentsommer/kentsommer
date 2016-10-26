@@ -4,7 +4,7 @@ title = "Kent Sommer"
 # Enable comments by entering your Disqus shortname
 disqusShortname = "kentsommer"
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "UA-86348737-1"
 theme = "hugo-sustain"
 
 [permalinks]
