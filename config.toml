@@ -1,4 +1,4 @@
-baseurl = "https://www.kentsommer.github.io/"
+baseurl = "https://www.kentsommer.github.io"
 languageCode = "en-us"
 title = "Kent Sommer"
 theme = "blackburn"
