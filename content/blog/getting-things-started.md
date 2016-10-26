@@ -1,0 +1,15 @@
+---
+author: "Kent Sommer"
+date: 2016-08-05
+linktitle: Getting Things Started
+title: Getting Things Started
+highlight: true
+---
+
+As I write this, I'm happy to say I am finally here in Korea and gazing off at the mountain view from my residence in Seoul. I walked around a bit yesterday which ended up being very nostalgic as memories of late night ramen trips, daily bus rides, and familiar places came floating back to me. It almost feels like I never left... Over the past 48 hours, one thing has become increasingly apparent, though, I really need to step up my studying game for Korean. After being able to speak and understand most of the Swedish conversation with all of my great friends the two weeks prior to this journey, not being able to understand almost anything here feels much more alienating than my last trip as I didn't realize how much I was missing by not being able to speak the language. That being said I have an updated and significantly more aggressive plan of attack for the language and plan to be to the intermediate / low vocab semi-fluency level by this time next year. Hard? Yes. Doable? Absolutely!
+
+Last time I was here I ran into very few stumbling blocks, but since my trip is much longer, this time, I am finally getting to experience what I imagine it is like for someone to try to come to the US for school. That is lots of paperwork and a rather frustrating experience getting daily life things in order. Yesterday I went out fully expecting to get my bank account and phone plan setup, however, I came up feeling mildly defeated. It turns out that although I DO have an account still under my name from my trip two years ago, that account is on "hold" since I haven't used it in over a year. And before you say "hey that's great just show your passport / visa and get it re-opened," I wish it was that simple. It turns out there have been some policy changes and due to this, I need proof of a need for a bank account. Being a student is ironically NOT an acceptable form of proof and instead, I would need to have a valid Alien Registration Card in order to open one. While this is somewhat of a non-issue as I have already signed up for my appointment with immigration to obtain one of these, it does put me in somewhat of a catch-22 for the next three weeks or so. Without the ARC (Alien Registration Card) I can't get a bank account, without a bank account I can't signup for phone service. Luckily having such great connections here has already paid off as I got some strings pulled and will be able to get a limited bank account setup which will allow me to signup for a phone plan on Monday. 
+
+Before I sign off on this post, I want to apologize for the somewhat rambly writing, I whipped this out right before leaving for the day so it's a bit off the cuff. Going forward I will try to stick to a once a week post on Saturdays with smaller posts during the week if there is anything I think is important enough to stand on its own. Please do leave comments and/or  those questions about Korea I know you have been dying to ask!
+
+Till next time!

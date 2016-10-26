@@ -1,53 +1,44 @@
-baseurl = "https://kentsommer.github.io"
-languageCode = "en-us"
+baseurl = "https://kentsommer.github.io/"
+languageCode = "en-US"
 title = "Kent Sommer"
-theme = "blackburn"
-author = "Kent Sommer"
-copyright = "&copy; 2016. All rights reserved."
-canonifyurls = true
-paginate = 10
+# Enable comments by entering your Disqus shortname
+disqusShortname = "kentsommer"
+# Enable Google Analytics by entering your tracking code
+googleAnalytics = ""
+theme = "hugo-sustain"
 
-[indexes]
-  tag = "tags"
-  topic = "topics"
+[permalinks]
+  post = "/:year/:month/:day/:slug"
 
 [params]
-  # Shown in the home page
-  subtitle = "Currently Under Construction"
-  brand = "Blackburn"
-  googleAnalytics = "Your Google Analytics tracking ID"
-  disqus = "Your Disqus shortname"
-  # CSS name for highlight.js
-  highlightjs = "androidstudio"
-  dateFormat = "02 Jan 2006, 15:04"
+  avatar = "profile.png"
+  author = "Kent Sommer"
+  description = "Personal Blog that is supposed to be here to help make my life easier..."
 
-[menu]
-  # Shown in the side menu.
-  [[menu.main]]
-    name = "Home"
-    pre = "<i class='fa fa-home fa-fw'></i>"
-    weight = 0
-    identifier = "home"
-    url = "/"
-  [[menu.main]]
-    name = "Blog"
-    pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 1
-    identifier = "post"
-    url = "/post/"
-  [[menu.main]]
-    name = "About"
-    pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 2
-    identifier = "about"
-    url = "/about/"
+  # Custom assets can be linked with their paths relative to static/
+  custom_css = []
+  custom_js  = []
 
 [social]
-  # Link your social networking accouns to the side menu
-  # by entering your username or ID.
-  twitter = "kentsommer"
-  #facebook = "*"
-  #instagram = "*"
-  github = "yoshiharuyamashita"
-  #stackoverflow = "*"
-  linkedin = "*"
+  Github        = "kentsommer"
+  Email         = "kent.sommer13@gmail.com"
+  Twitter       = "kentsommer"
+  LinkedIn      = "kentsommer"
+  #Stackoverflow = "username"
+
+## Main Menu
+[[menu.main]]
+  name = "blog"
+  weight = 100
+  identifier = "blog"
+  url = "/blog/"
+[[menu.main]]
+  name = "projects"
+  identifier = "projects"
+  weight = 200
+  url = "/projects/"
+[[menu.main]]
+  name = "resume"
+  identifier = "resume"
+  weight = 300
+  url = "/resume/"

@@ -1,0 +1,13 @@
+---
+author: "Kent Sommer"
+date: 2016-06-14
+linktitle: Preparations and History
+title: Preparations and History
+highlight: true
+---
+
+If I was asked to imagine four years ago where I would be today, never in my wildest dreams would I imagine myself here, yet, here I am, 50 days out from one of the biggest adventures of my life. In 50 short days, I will be boarding a plane for South Korea where I will be spending at least the next two years of my life. Now, this begs the question, how did I get here? Well, to answer that let me go back to a little over two years ago when I set foot in Korea for the first time.
+
+It was 6:00 PM and the plane had just landed at Incheon International Airport. I groggily made my way through security and picked up my bags after being awake for what felt like an eternity but was, in reality, only twenty-two hours or so. I was lucky enough to have a host family waiting for me right outside baggage claim and shortly thereafter (with the help of some coffee) found myself in the room I would call home for the next four months. Initially, I admit I was terrified... new country, new people, a new language I couldn't speak, new well... everything. However, it didn't take long before I started to realize that it was going to be hard to leave. Everything that was scary initially became everything I didn't want to leave behind. Work was fascinating and sparked a new fire that would end up being the driving force for my decision to continue on to graduate studies after receiving my bachelor's degree from the University of Minnesota. After returning home I knew I wanted to go back I just didn't know how I would make it a reality. Quickly my mind turned to school again and I focused on my studies, however, this time, I focused on robotics and computer vision. Feeling like I finally found the field I wanted to spend my life exploring it was time to start thinking about the future. Looking back, I think it was incredibly short sighted of me to only apply to two graduate schools (KAIST and University of Helsinki), however, everything worked out somehow and I got into both. Having spent time in Korea and already hating the lack of sunlight during Minnesota's winters I knew KAIST was where I wanted to spend the next leg of my academic journey.
+
+There is definitely a lot that still needs to be done. First and foremost, I need to actually figure what in the world to pack, two years is a long time and I've never been great a planning that far ahead. My Visa application still needs to be sent off among a myriad of other paperwork that I need to finish. While it all feels a little overwhelming at the moment, that doesn't even begin to cast a shadow over the excitement of beginning life in a new country.
