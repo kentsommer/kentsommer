@@ -9,5 +9,6 @@ git add -A && git commit -m "$msg" && git push origin master
 rm -rf public/*
 hugo
 cd public/
+echo "kentsommer.xyz" > CNAME
 git add -A && git commit -m "$msg" && git push origin master
 cd ../

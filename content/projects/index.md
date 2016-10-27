@@ -12,38 +12,23 @@ showpagemeta = "false"
     <div class="panel panel-default">
       <div class="panel-body">
       <h5>
-        <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="#">Project 1</a></strong>
-        - Ei viderer tacimates pro, quem assum ea nam. Veritus omnesque eam te. Et natum mucius tamquam vel,
-        ea dolorem volumus deterruisset nec. Graeci mentitum sea an, eu prima elaboraret est.
+        <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="https://github.com/kentsommer/2D-EKF-SLAM">2D Extendend Kalman Filter Based SLAM</a></strong> <br>
+        <i class="fa fa-cog"></i>&nbsp;&nbsp;<a href="SLAM_report.pdf" target="_blank">Paper</a> <br>
+        - This project serves as a robust simultaneous localization and mapping stack written for use on the Pioneer 3-DX with a SICK LMS-200 laser scanner in a pre-determined environment. It uses the extended kalman filter approach to SLAM which until recently was the go-to method of implementing SLAM. It consists of three main parts: motion controller, feature detector, and kalman filter. The motion controller runs in a separate thread to allow for faster updates and follows the following logic: turn left whenever possible, otherwise continue straight and align to the walls on either side. The feature detector works by applying the Hough Transform to extract lines which are subsequently processed down into segments and then corners which are used as features. The kalman filter is a standard implementation and uses the Mahalanobis distance algorithm to determine if landmarks are new or are being re-detected. 
       </h5>
       <h5>
-        <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="#">Project 2</a></strong>
-        - An eripuit phaedrum qui, nec facer splendide ex, vel ea assum facilisi convenire.
-        Te his neglegentur consectetuer.
+        <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="https://github.com/kentsommer/obstacle_detection">3D Obstacle Detection</a></strong> <br>
+        - This project serves as an obstacle detection stack with the goal of being efficient enough to run on relatively low powered hardware. The approach starts with an unfiltered pointcloud (from an 3D sensor). The first step is a passthrough filter which cuts off points further away in the Z direction than would be visible given the starting camera angle. Next I applied a voxel grid downsample to further help reduce the number of points. This was followed by performing statistical outlier removal on the points that didn't fit the set model (not enough points close enough together). The next step was ground extraction which used the following: RANSAC plane fitting, group plane inlier extraction, ground plane outlier extraction, convex hull creation from projected ground inliers, and finally outlier extraction from above the convex hull. The output of this could then be passed on to the path planning system. It is able to accurately detect objects as thin as 1.2 cm that are on the floor. 
       </h5>
         <h5>
-        <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="#">Project 3</a></strong>
-        - An alii quot tantas eum, doming platonem persecuti mea et, vim perpetua cotidieque delicatissimi in.
+        <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="https://github.com/kentsommer/3DObjectReconstruction">3D Object Reconstruction</a></strong> <br>
+        <i class="fa fa-cog"></i>&nbsp;&nbsp;<a href="3D+Model+Reconstruction+Paper.pdf" target="_blank">Individual Paper</a> <br>
+        <i class="fa fa-cog"></i>&nbsp;&nbsp;<a href="3D+Model+Reconstruction+Group+Paper.pdf" target="_blank">Group Paper</a> <br>
+        - This served as my final project for CSCI 5561 (Computer Vision). Using a single camera with pictures taken at multiple angles, this project allowed for a dense reconstruction of the original object. The project relies heavily on the principle of shape from silhouettes and voxel carving. It works by first extracting a silhouette of the object at all camera angles. These binary images are then used to carve away a bounding box of the object using shape from silhouettes. Finally, the carved model is then retextured by matching the 3D model points to their respective original images. 
       </h5>
       <h5>
-        <i class="fa fa-globe"></i>&nbsp;&nbsp;<strong><a href="#">Project 4</a></strong>
-        - Vim an case vidit sententiae, est at euismod laboramus efficiantur. Ei sit brute lorem,
-        ea eam timeam viderer aliquid, cu integre omittam moderatius quo.
-      </h5>
-      <h5>
-        <i class="fa fa-globe"></i>&nbsp;&nbsp;<strong><a href="#">Project 5</a></strong>
-        - Dicta causae meliore ex vel, in vix erant integre petentium. Vix ei nisl scripta recusabo,
-        eam doming blandit facilisis.
-      </h5>
-      <h5>
-        <i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="#">Project 6</a></strong>
-        - Inermis recusabo elaboraret mea et, dicat neglegentur vim te. Nec et sanctus scriptorem,
-        usu ex sapientem gubergren. Tamquam admodum ei usu.
-      </h5>
-      <h5>
-        <i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="#">Project 7</a></strong>
-        - Essent putant indoctum sed in, reprimique persequeris neglegentur te quo. Nam rebum
-        tractatos partiendo at, debet ubique oporteat ut his.
+        <i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="Sodoku+AI+Research+Paper.pdf">Sudoku AI Research Paper</a></strong> <br>
+        - This paper was my final research paper for CSCI 4511W (Introduction to Artificial Intelligence). It examines various approaches to building an AI for Sudoku.
       </h5>
 
 
