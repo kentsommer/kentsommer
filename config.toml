@@ -13,7 +13,7 @@ theme = "hugo-sustain"
 [params]
   avatar = "profile.png"
   author = "Kent Sommer"
-  description = "Personal Blog that is supposed to be here to help make my life easier..."
+  description = "Personal Blog"
 
   # Custom assets can be linked with their paths relative to static/
   custom_css = []
