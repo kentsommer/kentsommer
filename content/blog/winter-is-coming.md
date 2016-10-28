@@ -1,0 +1,19 @@
+---
+author: "Kent Sommer"
+date: 2016-10-28
+linktitle: Winter is Coming
+title: Winter is Coming
+highlight: true
+---
+
+As I groggily walked out of my dorm and into the crisp Fall air this morning it became readily apparent that Winter was indeed on its way. It is that extra little bite to the air that wasn't present a few days ago. Midterms have come and gone uneventfully which in my mind is a good thing. I did find out a rather crazy fact about tests for undergraduates here at KAIST though... apparently, most tests give you as much time as you want. Sounds good, right? Well... sort of? Turns out that unlimited time starts at 7PM so its a battle between staying awake and finishing the test. I've walked through the Computer Science building here and twice now have seen some lingering students still working on their test at 7:30-8:00AM. Its moments like those that make me glad I'm through the brunt of my coursework for my life. Don't get me wrong, I love learning and obviously wouldn't have come to grad school if I didn't. It just the darn tests...
+
+I realize it has been a while since I've posted anything and mostly that is because I haven't had much to talk about other than my research which is on my brain 24/7. So, writing about it is pretty much the last thing I want to do. As you may have noticed, the site has changed pretty drastically, which is due to switching web-hosts and needing to put things back together from scratch. Luckily I happened upon a pretty awesome static website generator called Hugo which also just so happens to support Github Pages which means no more paying for a web host. Oh and Github Pages supports custom domains for free so I could keep the same domain! (obviously, you have to supply your own domain but that's like $12 a year). 
+
+On a totally different note, I have sort of a fun project planned for my Information Security class that I'm sure some of you might find interesting. So, the accelerometers on mobile phones these days are actually getting pretty accurate and luckily for me (and this project), are not considered to produce private data. That is, accessing accelerometer data doesn't require a privilege request. Since no request is necessary, it seemed to lend itself well as a data source for a side channel attack or SCA. An SCA, put very simplistically, is an attack that works by using unsecured data and trying to determine something about a secure system that is producing it. In this case what I'm aiming to recover is press locations on the screen in real time. While this may not sound like much, it could essentially allow for background keylogging that "technically" doesn't break any rules and doesn't require escalated privileges. Training a machine learning model to classify accelerometer readings into screen press locations takes a lot of data though and that is where the second part of my project comes in. Simply mask the data collection required to train the model for each individual phone as a game. Basically... make a knockoff osu!
+
+> osu! is a freeware rhythm game developed by Dean "peppy" Herbert, originally for Microsoft Windows. It is written in C# on the .NET Framework. The game has also been ported to OS X, iOS, Android, and Windows Phone.
+
+Since the app knows where a user is pressing and can record accelerometer information at the same time, data is collected unknowingly and efficiently. After "enough" data has been collected it can be sent off to be trained on. Once trained, the weights are then sent back to the app on the phone and keylogging can commence. What I'm aiming to show through this project is that accelerometer data should probably be hidden behind privilege escalations and not just available for any background service to use freely as classification techniques are getting advanced enough to infer knowledge that was previously not possible. 
+
+
