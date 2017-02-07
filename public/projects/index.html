@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="map[]" />
+    <meta name="description" content="Personal Blog">
+    <link rel="favicon" href="https://kentsommer.xyz/img/favicon.ico">
+    <title>Projects</title>
+    <meta name="generator" content="Hugo 0.16-DEV" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://kentsommer.xyz/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+    
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-86348737-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      
+      <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://kentsommer.xyz/"><i class="fa fa-home"></i></a>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+        <li><a href="/blog/">BLOG</a></li>
+        
+        <li><a href="/projects/">PROJECTS</a></li>
+        
+        <li><a href="/resume.pdf">RESUME</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
+        <section id="projects">
+  <div class="container">
+    <h3>Projects</h3>
+    <div class="panel panel-default">
+      <div class="panel-body">
+      <h5>
+        <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="https://github.com/kentsommer/2D-EKF-SLAM">2D Extendend Kalman Filter Based SLAM</a></strong> <br>
+        <i class="fa fa-cog"></i>&nbsp;&nbsp;<a href="SLAM_report.pdf" target="_blank">Paper</a> <br>
+        - This project serves as a robust simultaneous localization and mapping stack written for use on the Pioneer 3-DX with a SICK LMS-200 laser scanner in a pre-determined environment. It uses the extended kalman filter approach to SLAM which until recently was the go-to method of implementing SLAM. It consists of three main parts: motion controller, feature detector, and kalman filter. The motion controller runs in a separate thread to allow for faster updates and follows the following logic: turn left whenever possible, otherwise continue straight and align to the walls on either side. The feature detector works by applying the Hough Transform to extract lines which are subsequently processed down into segments and then corners which are used as features. The kalman filter is a standard implementation and uses the Mahalanobis distance algorithm to determine if landmarks are new or are being re-detected. 
+      </h5>
+      <h5>
+        <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="https://github.com/kentsommer/obstacle_detection">3D Obstacle Detection</a></strong> <br>
+        - This project serves as an obstacle detection stack with the goal of being efficient enough to run on relatively low powered hardware. The approach starts with an unfiltered pointcloud (from an 3D sensor). The first step is a passthrough filter which cuts off points further away in the Z direction than would be visible given the starting camera angle. Next I applied a voxel grid downsample to further help reduce the number of points. This was followed by performing statistical outlier removal on the points that didn't fit the set model (not enough points close enough together). The next step was ground extraction which used the following: RANSAC plane fitting, group plane inlier extraction, ground plane outlier extraction, convex hull creation from projected ground inliers, and finally outlier extraction from above the convex hull. The output of this could then be passed on to the path planning system. It is able to accurately detect objects as thin as 1.2 cm that are on the floor. 
+      </h5>
+        <h5>
+        <i class="fa fa-github"></i>&nbsp;&nbsp;<strong><a href="https://github.com/kentsommer/3DObjectReconstruction">3D Object Reconstruction</a></strong> <br>
+        <i class="fa fa-cog"></i>&nbsp;&nbsp;<a href="3D+Model+Reconstruction+Paper.pdf" target="_blank">Individual Paper</a> <br>
+        <i class="fa fa-cog"></i>&nbsp;&nbsp;<a href="3D+Model+Reconstruction+Group+Paper.pdf" target="_blank">Group Paper</a> <br>
+        - This served as my final project for CSCI 5561 (Computer Vision). Using a single camera with pictures taken at multiple angles, this project allowed for a dense reconstruction of the original object. The project relies heavily on the principle of shape from silhouettes and voxel carving. It works by first extracting a silhouette of the object at all camera angles. These binary images are then used to carve away a bounding box of the object using shape from silhouettes. Finally, the carved model is then retextured by matching the 3D model points to their respective original images. 
+      </h5>
+      <h5>
+        <i class="fa fa-cog"></i>&nbsp;&nbsp;<strong><a href="Sodoku+AI+Research+Paper.pdf">Sudoku AI Research Paper</a></strong> <br>
+        - This paper was my final research paper for CSCI 4511W (Introduction to Artificial Intelligence). It examines various approaches to building an AI for Sudoku.
+      </h5>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+      </div>
+    </div>
+
+    
+    <footer>
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a> and
+      <a href="https://www.github.com/sumaxime/hugo-sustain/">sustain</a> with ♥</p>
+    </div>
+  </div>
+</footer>
+<div class="footer"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://kentsommer.xyz/js/docs.min.js"></script>
+<script src="https://kentsommer.xyz/js/main.js"></script>
+
+<script src="https://kentsommer.xyz/js/ie10-viewport-bug-workaround.js"></script>
+
+
+    
+  </body>
+</html>

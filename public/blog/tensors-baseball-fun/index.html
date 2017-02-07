@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="map[]" />
+    <meta name="description" content="Personal Blog">
+    <link rel="favicon" href="https://kentsommer.xyz/img/favicon.ico">
+    <title>Tensors, Baseball, and a whole lot of fun</title>
+    <meta name="generator" content="Hugo 0.16-DEV" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://kentsommer.xyz/css/main.css" /><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+    
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-86348737-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      
+      <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="https://kentsommer.xyz/"><i class="fa fa-home"></i></a>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+        <li><a href="/blog/">BLOG</a></li>
+        
+        <li><a href="/projects/">PROJECTS</a></li>
+        
+        <li><a href="/resume.pdf">RESUME</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="container">
+        <div class="blog-post">
+          <h3>
+            <strong><a href="https://kentsommer.xyz/blog/tensors-baseball-fun/">Tensors, Baseball, and a whole lot of fun</a></strong>
+          </h3>
+        </div>
+        <div class="blog-title">
+          <h4>
+          September 20, 2016
+            &nbsp;&nbsp;
+            
+          </h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="blogpost">
+              <p>It has taken a while for me to really feel settled in here, but I think I&rsquo;ve finally crossed that line and I&rsquo;m starting to feel really blessed to be here.</p>
+
+<p>The last couple weeks have been an absolute blast and given the fact that I basically get to build cool things every day, so should the rest of my time here. As far as classes go&hellip; I can&rsquo;t really pick out many differences so far compared to the structure of similar graduate level courses in the US. Perhaps in some classes, there is a bit more emphasis on fact memorization, but even that seems to be within the bounds of normal. I&rsquo;ve mentioned this to a few people now whenever they ask what the big differences between the US and Korea are, but it is actually really hard to say. Once you step off the plane, everything is so radically different and yet so easy to become accustomed to that you hardly realize the changes in lifestyle or cultural behavior. In that sense, I think Korea is a great tourist destination not because it is easy to get around without knowing the language (it isn&rsquo;t&hellip; it is actually pretty hard), but simply because you get used to the radical differences extremely quickly.</p>
+
+<p>Now, you probably read the title of this post and by this point, you are thinking what in the world does any of this have to do with tensors, to which the obvious answer is&hellip; absolutely nothing. But, let&rsquo;s change that. Not too terribly long ago, Google released its machine learning library &ldquo;TensorFlow&rdquo;</p>
+
+<blockquote>
+<p>TensorFlow™ is an open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) communicated between them.</p>
+</blockquote>
+
+<p>This library is not dissimilar to other machine learning libraries such as Caffe, Theano, etc., however, since it is new and probably most importantly required for use in a homework assignment, it is the library I am using at the moment. Machine learning has recently gotten a lot of attention in the area of Computer Vision for achieving really awesome results for tasks such as object/place recognition, and image captioning. My foray into TensorFlow (due to the homework assignment) has been focused on image retrieval using CNN (Convolutional Neural Network) features. Given a pre-trained VGG16 network as shown here:</p>
+
+<p><img src="/postimgs/vgg16.png" alt="alt text" /></p>
+
+<p>If you use the second 1x1x4096 fully connected layer (fc2) as a feature vector on a given query image, and then again pull out the fc2 feature vector on each image in some set that is known to contain similar or identical images (even those taken at different angles or scales), it becomes possible to match the feature vectors (using some similarity measurement) and retrieve pictures of the same image or similar ones. While this approach is naive, and if running solely on a CPU it is also stupidly slow (for 250 query images and a test set of 1000 it takes 29.86 hours to run), it still manages to achieve very acceptable results. Do note, this would be orders of magnitude faster given a GPU with enough vRAM, however, my measly 2GB card runs out of memory on this task. All of that being said, the precision achieved is actually impressive. It is able to achieve 92% accuracy when trying to match the closest 4 images in the test dataset to some image category in the query dataset.</p>
+
+<p>While this work is barely scratching the surface of what is currently possible using machine learning, it is still extremely impressive compared with the past work in image matching using hand crafted features (SIFT, SURF, ORB, etc).</p>
+
+<p>Source code for the above: <a href="https://github.com/kentsommer/VGG16-Image-Retrieval">https://github.com/kentsommer/VGG16-Image-Retrieval</a></p>
+
+<p>Now&hellip; baseball. Anyone who knows me is aware of the fact that I&rsquo;ve never particularly liked watching baseball mainly due to the fact that there just simply isn&rsquo;t a heck of a lot happening most of the time. I&rsquo;m sure it is fun to play, just not the quickest paced spectator sport. Well, let me tell you, watching baseball in Korea flips that idea on its head. While the game itself is still slow, you can&rsquo;t focus on that most of the time because the bits where nothing is happening are all filled with syncronized cheering, chanting, and dancing. Every time &ldquo;your team&rdquo; is up to bat, the cheering man (for lack of a better description) gets up on a stage and starts directing. These chants/cheers are also distinctly different from the US style of cheerleading songs mainly because they are very specific to whoever is batting. Each player has their own &ldquo;theme-song&rdquo; if not multiple songs. Everyone, and I mean EVERYONE sings along and waves their hands about. It is a blast and the energy is greater than that of almost any professional sports game I&rsquo;ve been to in the US (granted its a pretty small sample size&hellip;). If you ever come to Korea make sure to try to catch a baseball game (and bring a Korean friend with who can help guide you with what you are supposed to be chanting) even if you aren&rsquo;t a huge fan of the game normally. Here is a short clip of the crowd after the team we were cheering for hit a homerun to finish off the game and win (and yes I know it is stupid that I recorded it vertically but hey it is in 4K!):</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/-3izxpVzTZM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
+ </div>
+
+
+              <hr>
+              <div class="related-posts">
+                <h5>Related Posts</h5>
+                
+              </div>
+            </div>
+          </div>
+          <hr>
+        <div class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+
+    (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+        return;
+
+      var disqus_shortname = 'kentsommer';
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="https://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    
+    <footer>
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a> and
+      <a href="https://www.github.com/sumaxime/hugo-sustain/">sustain</a> with ♥</p>
+    </div>
+  </div>
+</footer>
+<div class="footer"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://kentsommer.xyz/js/docs.min.js"></script>
+<script src="https://kentsommer.xyz/js/main.js"></script>
+
+<script src="https://kentsommer.xyz/js/ie10-viewport-bug-workaround.js"></script><!-- Syntax highlighting -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Kent Sommer</title>
+    <link>https://kentsommer.xyz/categories/projects/</link>
+    <description>Recent content in Projects on Kent Sommer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 02 Oct 2016 22:55:05 -0400</lastBuildDate>
+    <atom:link href="https://kentsommer.xyz/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Projects</title>
+      <link>https://kentsommer.xyz/projects/</link>
+      <pubDate>Sun, 02 Oct 2016 22:55:05 -0400</pubDate>
+      
+      <guid>https://kentsommer.xyz/projects/</guid>
+      <description>&lt;section id=&#34;projects&#34;&gt;
+  &lt;div class=&#34;container&#34;&gt;
+    &lt;h3&gt;Projects&lt;/h3&gt;
+    &lt;div class=&#34;panel panel-default&#34;&gt;
+      &lt;div class=&#34;panel-body&#34;&gt;
+      &lt;h5&gt;
+        &lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;https://github.com/kentsommer/2D-EKF-SLAM&#34;&gt;2D Extendend Kalman Filter Based SLAM&lt;/a&gt;&lt;/strong&gt; &lt;br&gt;
+        &lt;i class=&#34;fa fa-cog&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;SLAM_report.pdf&#34; target=&#34;_blank&#34;&gt;Paper&lt;/a&gt; &lt;br&gt;
+        - This project serves as a robust simultaneous localization and mapping stack written for use on the Pioneer 3-DX with a SICK LMS-200 laser scanner in a pre-determined environment. It uses the extended kalman filter approach to SLAM which until recently was the go-to method of implementing SLAM. It consists of three main parts: motion controller, feature detector, and kalman filter. The motion controller runs in a separate thread to allow for faster updates and follows the following logic: turn left whenever possible, otherwise continue straight and align to the walls on either side. The feature detector works by applying the Hough Transform to extract lines which are subsequently processed down into segments and then corners which are used as features. The kalman filter is a standard implementation and uses the Mahalanobis distance algorithm to determine if landmarks are new or are being re-detected. 
+      &lt;/h5&gt;
+      &lt;h5&gt;
+        &lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;https://github.com/kentsommer/obstacle_detection&#34;&gt;3D Obstacle Detection&lt;/a&gt;&lt;/strong&gt; &lt;br&gt;
+        - This project serves as an obstacle detection stack with the goal of being efficient enough to run on relatively low powered hardware. The approach starts with an unfiltered pointcloud (from an 3D sensor). The first step is a passthrough filter which cuts off points further away in the Z direction than would be visible given the starting camera angle. Next I applied a voxel grid downsample to further help reduce the number of points. This was followed by performing statistical outlier removal on the points that didn&#39;t fit the set model (not enough points close enough together). The next step was ground extraction which used the following: RANSAC plane fitting, group plane inlier extraction, ground plane outlier extraction, convex hull creation from projected ground inliers, and finally outlier extraction from above the convex hull. The output of this could then be passed on to the path planning system. It is able to accurately detect objects as thin as 1.2 cm that are on the floor. 
+      &lt;/h5&gt;
+        &lt;h5&gt;
+        &lt;i class=&#34;fa fa-github&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;https://github.com/kentsommer/3DObjectReconstruction&#34;&gt;3D Object Reconstruction&lt;/a&gt;&lt;/strong&gt; &lt;br&gt;
+        &lt;i class=&#34;fa fa-cog&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;3D+Model+Reconstruction+Paper.pdf&#34; target=&#34;_blank&#34;&gt;Individual Paper&lt;/a&gt; &lt;br&gt;
+        &lt;i class=&#34;fa fa-cog&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;a href=&#34;3D+Model+Reconstruction+Group+Paper.pdf&#34; target=&#34;_blank&#34;&gt;Group Paper&lt;/a&gt; &lt;br&gt;
+        - This served as my final project for CSCI 5561 (Computer Vision). Using a single camera with pictures taken at multiple angles, this project allowed for a dense reconstruction of the original object. The project relies heavily on the principle of shape from silhouettes and voxel carving. It works by first extracting a silhouette of the object at all camera angles. These binary images are then used to carve away a bounding box of the object using shape from silhouettes. Finally, the carved model is then retextured by matching the 3D model points to their respective original images. 
+      &lt;/h5&gt;
+      &lt;h5&gt;
+        &lt;i class=&#34;fa fa-cog&#34;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp;&lt;strong&gt;&lt;a href=&#34;Sodoku+AI+Research+Paper.pdf&#34;&gt;Sudoku AI Research Paper&lt;/a&gt;&lt;/strong&gt; &lt;br&gt;
+        - This paper was my final research paper for CSCI 4511W (Introduction to Artificial Intelligence). It examines various approaches to building an AI for Sudoku.
+      &lt;/h5&gt;
+
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
