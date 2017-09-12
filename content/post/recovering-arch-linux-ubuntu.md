@@ -34,5 +34,5 @@ The above steps allow you to boot into arch linux, however, currently that edit 
 3. Run `sudo grub-install /dev/sda` 
   * Note: replace `/dev/sda` with your boot drive if it is different
 
-These commands will generate a new grub.cfg file and also gives arch linux control of grub again. This ensures that the arch linux boot entry will always be correct! 
+These commands will generate a new grub.cfg file and also give arch linux control of grub again. This ensures that the arch linux boot entry will always be correct! 
 
