@@ -32,5 +32,5 @@ weight = 1
 
 # Biography
 
-I am currently a graduate researcher for the Intelligent Systems and Neurobotics Lab at KAIST. My research interests include machine learning, computer vision, and mobile robotics. I have diverse US and international work experience accross the fields of software engineering, robotics, and business intelligence.
+I am currently a graduate researcher for the Intelligent Systems and Neurobotics Lab at KAIST. My research interests include machine learning, computer vision, and mobile robotics. I have diverse US and international work experience across the fields of software engineering, robotics, and business intelligence.
 
