@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on Kent Sommer</title>
+    <link>https://kentsommer.com/home/</link>
+    <description>Recent content in Homes on Kent Sommer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2021 Kent Sommer</copyright>
+    <lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kentsommer.com/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://kentsommer.com/home/about/</link>
+      <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/home/about/</guid>
+      <description>Biography I am currently a Software Engineer at Toyota Research Institute (secondeed to Woven Planet in Tokyo, JP). My out of work interests include tinkering with machine learning, computer vision, and mobile robotics projects. I have diverse US and international work experience across the fields of software engineering and robotics.</description>
+    </item>
+    
+    <item>
+      <title>Selected Publications</title>
+      <link>https://kentsommer.com/home/publications_selected/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/home/publications_selected/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://kentsommer.com/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent Posts</title>
+      <link>https://kentsommer.com/home/posts/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/home/posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://kentsommer.com/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://kentsommer.com/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/home/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

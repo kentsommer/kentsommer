@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Kent Sommer</title>
+    <link>https://kentsommer.com/tags/</link>
+    <description>Recent content in Tags on Kent Sommer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2021 Kent Sommer</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://kentsommer.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Content tagged as &#39;Academic&#39;</title>
+      <link>https://kentsommer.com/tags/academic/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/tags/academic/</guid>
+      <description>Here is a list of all the content that has been tagged as academic.</description>
+    </item>
+    
+    <item>
+      <title>Computer Security</title>
+      <link>https://kentsommer.com/tags/computer-security/</link>
+      <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/tags/computer-security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer Vision</title>
+      <link>https://kentsommer.com/tags/computer-vision/</link>
+      <pubDate>Sat, 16 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/tags/computer-vision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>https://kentsommer.com/tags/deep-learning/</link>
+      <pubDate>Thu, 20 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life Abroad</title>
+      <link>https://kentsommer.com/tags/life-abroad/</link>
+      <pubDate>Fri, 03 Feb 2017 12:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/tags/life-abroad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://kentsommer.com/tags/machine-learning/</link>
+      <pubDate>Mon, 19 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technical</title>
+      <link>https://kentsommer.com/tags/technical/</link>
+      <pubDate>Thu, 26 Oct 2017 12:00:00 +0000</pubDate>
+      
+      <guid>https://kentsommer.com/tags/technical/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
