@@ -1,7 +1,7 @@
 +++
 # About/Biography widget.
 
-date = "2017-08-01T00:00:00"
+date = "2021-03-18T00:00:00"
 draft = false
 
 widget = "about"
@@ -19,7 +19,7 @@ weight = 1
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "M.S. in Computer Science (ongoing)"
+  course = "M.S. in Computer Science"
   institution = "Korea Advanced Institute of Science and Technology"
   year = 2018
 
@@ -32,5 +32,5 @@ weight = 1
 
 # Biography
 
-I am currently a graduate researcher for the Intelligent Systems and Neurobotics Lab at KAIST. My research interests include machine learning, computer vision, and mobile robotics. I have diverse US and international work experience across the fields of software engineering, robotics, and business intelligence.
+I am currently a Software Engineer at Toyota Research Institute (secondeed to Woven Planet in Tokyo, JP). My out of work interests include tinkering with machine learning, computer vision, and mobile robotics projects. I have diverse US and international work experience across the fields of software engineering and robotics.
 
