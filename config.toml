@@ -57,7 +57,7 @@ disableHugoGeneratorInject = false
   keywords = "Kent Sommer"
   images = [""]
 
-  homeSubtitle = "Software Engineer @ Toyota Research Institute"
+  homeSubtitle = "Software Engineer @ Waymo"
 
   # Set a background for the homepage
   # backgroundImage = "assets/images/background.jpg"
